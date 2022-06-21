@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/67f504bb87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style/reset.css">
     <link rel="stylesheet" href="assets/style/global.css">
 
     <title>Fernando Stadler</title>
@@ -212,18 +212,18 @@
 
     <section class="contact">
         <div class="container">
-            <form>
+            <form id="contact-form">
                 <div class="form-header">
                     <h2>Contato</h2>
                     <p>Quer entrar em contato comigo?</p>
                     <p>preencha o formulário e entrarei em contato o mais rápido possível</p>
                 </div>
-                <input type="text" id="name" placeholder="Nome">
-                <input type="text" id="mail" placeholder="Email">
-                <input type="text" id="subject" placeholder="Assunto">
-                <textarea name="viewport" id="message" placeholder="Digite a mensagem"></textarea>
+                <input type="text" id="name"  name="name" placeholder="Nome">
+                <input type="text" id="mail" name="mail" placeholder="Email">
+                <input type="text" id="subject" name="subject" placeholder="Assunto">
+                <textarea name="viewport" id="message" name="message" placeholder="Digite a mensagem"></textarea>
                 <div>
-                    <button type="submit" class="btn-send">Enviar mensagem</button>
+                    <button id="submit" type="submit" class="btn-send">Enviar mensagem</button>
                 </div>
             </form>
         </div>
@@ -233,6 +233,10 @@
                 <p>Desenvolvido por Fernando Stadler</p>
                 <p>2022</p>
         </footer>
+<script src="https://kit.fontawesome.com/67f504bb87.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="javascript/init.js"> </script>
+<script src="javascript/app.js"> </script>
 </body>
 
 </html>
