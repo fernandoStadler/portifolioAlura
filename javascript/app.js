@@ -26,7 +26,7 @@ function sendResponse(CssClassName, message) {
 }
 
 function sendEmail() {
-    emailjs.send("site.FernandoStadler", "template_lzaqcbs", templateParams).then(function (response) {
+    emailjs.send("site.FernandoStadler", "template_lzaqcbs", templateParams).then(function () {
         sendResponse("send-sucess","O seu email foi enviado com sucesso!")
     }, function () {
         sendResponse("send-error","Email não enviado")
