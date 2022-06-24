@@ -1,6 +1,6 @@
-let btnSend = document.getElementById("submit");      
-let inputName = document.getElementById("name");    
-let subject = document.getElementById("subject");    
+let btnSend = document.getElementById("submit");
+let inputName = document.getElementById("name");
+let subject = document.getElementById("subject");
 let mail = document.getElementById("mail");
 let message = document.getElementById("message");
 let responseMail = document.getElementById("response-mail");
@@ -13,34 +13,40 @@ let templateParams = {
     mail: mail.value,
     message: message.value,
 };
+btnSend.disabled = true;
 function validadeField() {
-    if (inputName.value == "" || subject.value == "" || mail.value == "" || message.value == "") {  
-        btnSend.disabled = true;  
-        } else {
-            btnSend.disabled = false;
-        }
+    if (inputName.value !== "" && subject.value !== "" && mail.value !== "" && message.value !== "") {
+        btnSend.disabled = false;
+    }
 } validadeField();
+function cleanField(field) {
+    return field.value = null
+}
+inputName.onkeydown = validadeField;
+subject.onkeydown = validadeField;
+mail.onkeydown = validadeField;
+message.onkeydown = validadeField;
 
-    inputName.onkeydown = validadeField;
-    subject.onkeydown = validadeField;
-    mail.onkeydown = validadeField;
-    message.onkeydown = validadeField;
-
-function cleanResponse(){
+function cleanResponse() {
+    btnSend.disabled = true;
+    cleanField(inputName);
+    cleanField(subject);
+    cleanField(mail);
+    cleanField(message);
     responseMail.className = "d-block"
     textMsg.innerText = "";
 }
-function sendResponse(CssClassName, message) {
+
+function sendResponse(CssClassName, txtMessage) {
     responseMail.className = CssClassName;
-    textMsg.innerText = message;
-    setInterval(cleanResponse, 10000);
+    textMsg.innerText = txtMessage;
+    setInterval(cleanResponse, 5000);
 }
 function sendEmail() {
     emailjs.send("site.FernandoStadler", "template_lzaqcbs", templateParams).then(function () {
-        sendResponse("send-sucess","O seu email foi enviado com sucesso!")
+        sendResponse("send-sucess", "O seu email foi enviado com sucesso!")
     }, function () {
-        sendResponse("send-error","Email não enviado")
+        sendResponse("send-error", "Ocorreu um erro e seu email não foi enviado")
     });
 }
-
 btnSend.onclick = sendEmail;

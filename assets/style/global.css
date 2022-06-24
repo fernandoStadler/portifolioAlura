@@ -387,13 +387,10 @@ form  textarea {
     border-radius: 5px;
     border: 1px solid #c2c2c2;
 }
-
-
 #name:focus {
     box-shadow: 0px 0px 20px 2px #49a6db;
     transition: box-shadow 1s;
 }
-
 #mail:focus {
     box-shadow: 0px 0px 20px 2px #49a6db;
     transition: box-shadow 1s;
