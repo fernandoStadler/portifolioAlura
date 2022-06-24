@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfólio de projetos criado por Fernando Stadler durante a sua carreira de desenvolvedor">
+    <meta name="robots" content="index">
+    <meta name="author" content="Fernando Stadler">
+    <meta name="keywords" content="Dev frontend, desenvolvedor frontend, CSS, HTML, Javascript, Alura, Portifolio, Oracle, ONE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/global.css">
     <link rel="stylesheet" href="assets/style/mobile.css">
     <title>Fernando Stadler</title>
+
+   
+
 </head>
+
 <body>
     <nav class="nav-bar">
         <div class="logo">
@@ -15,17 +26,17 @@
             <label><strong>Fernando Stadler</strong></label>
         </div>
         <ul>
-            <li><a href="http://">Sobre mim</a></li>
-            <li><a href="http://">Skills</a></li>
-            <li><a href="http://">Hobbies</a></li>
-            <li><a href="http://">Formação</a></li>
-            <li><a href="http://">Projetos</a></li>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#degree">Formação</a></li>
+            <li><a href="#projects">Projetos</a></li>
             <li><strong>fernandostadler2@gmail.com</strong></li>
         </ul>
     </nav>
     <header>
         <div class="container">
-            <div class="text-content">
+            <div class="text-content" data-aos="flip-down" data-aos-duration="3000">
                 <h1>Olá, meu nome é Fernando Stadler e sou Desenvolvedor Web</h1>
                 <p>Eu sou formado em Analise e desenvolvimento de sistemas e atualmente estou participando no projeto
                     Oracle ONE na Alura.</p>
@@ -38,14 +49,14 @@
                             target="_blank">Curriculo <i class="fa-solid fa-up-right-from-square"></i></a></li>
                 </ul>
             </div>
-            <div class="avatar-header">
+            <div class="avatar-header" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="https://avatars.githubusercontent.com/u/51368071?s=400&u=c5fed251143176d551076dde8c26a76978f6ec2f&v=4"
                     alt="Fernando Stadler">
             </div>
         </div>
     </header>
     </main>
-    <section class="about-me">
+    <section id="about" class="about-me" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         <h2>Sobre mim</h2>
         <p>Formado em análise e desenvolvimento de sistemas pela Universidade Cruzeiro do Sul, morador da grande São
             Paulo e um apaixonado por tecnologia desde criança.</p>
@@ -64,7 +75,7 @@
         </div>
         </div>
     </section>
-    <section class="skills bg-darkBlue">
+    <section id="skills" class="skills bg-darkBlue"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
         <h2 class="title-white">Skills</h2>
         <div class="group-items">
             <div class="items">
@@ -89,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="hobbies">
+    <section id="hobbies" class="hobbies"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <h2 class="title-white">Hobbies</h2>
         <div class="group-items">
             <div class="items">
@@ -106,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section class="college-degree">
+    <section id="degree" class="college-degree"  data-aos="zoom-out" data-aos-duration="1500">
         <h2 class="title-dark">Formação</h2>
         <div class="group-items">
             <div class="college-items">
@@ -141,9 +152,9 @@
             </div>
         </div>
     </section>
-    <section class="projects bg-darkBlue">
+    <section id="projects" class="projects bg-darkBlue">
         <h2 class="title-white">Projetos</h2>
-        <div class="group-items">
+        <div class="group-items"  data-aos="zoom-in-right" data-aos-duration="3000">
             <div class="project-tumb">
                 <img src="assets/img/cep.png" alt="" srcset="">
             </div>
@@ -153,12 +164,12 @@
                     <small>Criado com React JS, Axios e Bootstrap</small>
                 </div>
                 <div class="actions-btn">
-                    <button class="btn-repository">Repositório</button>
-                    <button class="btn-demo">Ver demo</button>
+                    <a href="https://github.com/fernandoStadler/localiza" target="_blank"><button class="btn-repository">Repositório</button></a>                    
+                    <a href="https://localiza.netlify.app/" target="_blank"><button class="btn-demo">Ver demo</button></a>
                 </div>
             </div>
         </div>
-        <div class="group-items">
+        <div class="group-items"  data-aos="zoom-in-left" data-aos-duration="3000" >
             <div class="project-tumb">
                 <img src="assets/img/decodificador.png" alt="" srcset="">
             </div>
@@ -168,12 +179,12 @@
                     <small>Criado com HTML, CSS e Javascript</small>
                 </div>
                 <div class="actions-btn">
-                    <a href="https://github.com/fernandoStadler/text-decode-alura"><button class="btn-repository">Repositório</button></a>
-                    <button class="btn-demo">Ver demo</button>
+                    <a href="https://github.com/fernandoStadler/text-decode-alura" target="_blank"><button class="btn-repository">Repositório</button></a>                    
+                    <a href="https://fernandostadler.github.io/text-decode-alura/" target="_blank"><button class="btn-demo">Ver demo</button></a>
                 </div>
             </div>
         </div>
-        <div class="group-items">
+        <div class="group-items"  data-aos="zoom-in-right" data-aos-duration="3000" >
             <div class="project-tumb">
                 <img src="assets/img/jokenpo.png" alt="" srcset="">
             </div>
@@ -183,12 +194,12 @@
                     <small>Jogo criado com HTML, CSS e Javascript</small>
                 </div>
                 <div class="actions-btn">
-                    <button class="btn-repository">Repositório</button>
-                    <button class="btn-demo">Ver demo</button>
+                    <a href="https://github.com/fernandoStadler/jokenpo" target="_blank"><button class="btn-repository">Repositório</button></a>                    
+                    <a href="https://jokenpoo.netlify.app/" target="_blank"><button class="btn-demo">Ver demo</button></a>
                 </div>
             </div>
         </div>
-        <div class="group-items">
+        <div class="group-items"  data-aos="zoom-in-left" data-aos-duration="3000" >
             <div class="project-tumb">
                 <img src="assets/img/hangman.png" alt="" srcset="">
             </div>
@@ -198,13 +209,13 @@
                     <small>Jogo criado com HTML, CSS e Javascript</small>
                 </div>
                 <div class="actions-btn">
-                    <button class="btn-repository">Repositório</button>
-                    <button class="btn-demo">Ver demo</button>
+                    <a href="https://github.com/fernandoStadler/jogo-da-forca---Alura" target="_blank"><button class="btn-repository">Repositório</button></a>                    
+                    <a href="https://fernandostadler.github.io/jogo-da-forca---Alura/" target="_blank"><button class="btn-demo">Ver demo</button></a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <form id="contact-form">
                 <div class="form-header">
@@ -212,10 +223,10 @@
                     <p>Quer entrar em contato comigo?</p>
                     <p>preencha o formulário e entrarei em contato o mais rápido possível</p>
                 </div>
-                    <input type="text" id="name" name="name" placeholder="Nome">
-                    <input type="text" id="mail" name="mail" placeholder="Email">
-                    <input type="text" id="subject" name="subject" placeholder="Assunto">
-                    <textarea name="viewport" id="message" name="message" placeholder="Digite a mensagem"></textarea>
+                <input type="text" id="name" name="name" placeholder="Nome">
+                <input type="text" id="mail" name="mail" placeholder="Email">
+                <input type="text" id="subject" name="subject" placeholder="Assunto">
+                <textarea name="viewport" id="message" name="message" placeholder="Digite a mensagem"></textarea>
                 <div id="response-mail" class="d-block">
                     <p id="text-msg"></p>
                 </div>
@@ -225,14 +236,21 @@
             </form>
         </div>
     </section>
+    <section>
+        <div class="float-btn">
+            <button class="btn-back">  <a href="#"><i class="fa-solid fa-arrow-up"></i></a></button>
+        </div>
+    </section>
     <main>
-    <footer class="footer">
-        <p>Desenvolvido por Fernando Stadler</p>
-        <p>2022</p>
-    </footer>
-    <script src="https://kit.fontawesome.com/67f504bb87.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="javascript/init.js"> </script>
-    <script src="javascript/app.js"> </script>
+        <footer class="footer">
+            <p>Desenvolvido por Fernando Stadler</p>
+            <p>2022</p>
+        </footer>
+        <script src="https://kit.fontawesome.com/67f504bb87.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="javascript/init.js"> </script>
+        <script src="javascript/app.js"> </script>
 </body>
+
 </html>

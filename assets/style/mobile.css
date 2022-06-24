@@ -109,6 +109,9 @@
     width: 100%;
     }
 
+    .float-btn{
+        display: none;
+    }
 }
 
 @media (max-width: 460px) {
@@ -134,5 +137,15 @@
         width: auto;
         overflow-y: hidden;
         }
+}
 
+@media (max-width: 400px) {
+.logo{
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5em;
+}
+    nav > ul> li> strong {
+        display: none;
+   }
 }

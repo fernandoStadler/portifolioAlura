@@ -4,6 +4,8 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -237,7 +239,6 @@ header p {
 .items img {
     width: 80px;
 }
-
 .items legend {
     width: 100%;
     text-align: center;
@@ -463,6 +464,28 @@ form  textarea {
     color:white;
     cursor: default;
 
+}
+
+.float-btn{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+.btn-back{
+    background-color: #16425b67;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    border: none;
+}
+.btn-back a{
+    color:white;
+    text-decoration: none;
 }
 
 footer {
