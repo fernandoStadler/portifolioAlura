@@ -252,25 +252,18 @@ header p {
 .hobbies {
     background-color: #16425b;
     padding: 30px 0;
-
 }
-
 .academy {
     padding: 30px 0;
-
 }
-
 .signature {
     font-family: 'Satisfy', cursive;
     font-size: 1.5em;
     text-align: right;
-
 }
-
 .college-degree {
     padding: 30px 0;
 }
-
 .college-items {
     display: flex;
     flex-direction: column;
@@ -293,15 +286,12 @@ header p {
     transition: box-shadow 1s;
 }
 
-
 .college-content {
     padding: 30px;
 }
-
 .college-items img {
     width: 150px;
 }
-
 .college-footer {
     width: 100%;
     background-color: #ffffff;
@@ -309,27 +299,26 @@ header p {
     text-align: center;
     border: 1px solid #c2c2c2;
 }
-
 .projects {
     padding: 30px 0;
 }
 .project-tumb{
-    width: 600px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
     height:300px ;
     border-radius: 10px;
 }
-
-.project-tumb:hover {
-    box-shadow: 0px 0px 50px #49a6db;
-    transition: box-shadow 1s;
-}
-
 .project-tumb img {
     width: 600px;
     height:300px ;
     border-radius: 10px;
 }
-
+.description-project{
+    width: 50%;
+    text-align: left;
+}
 .description-project .text-description {
     color: white;
     margin-bottom: 15px;
@@ -427,7 +416,6 @@ form  textarea {
 .form-header h2 {
     margin: 10px 0;
 }
-
 .send-sucess{
     margin: 10px 0;
     padding: 10px;

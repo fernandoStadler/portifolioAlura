@@ -53,6 +53,7 @@
     }
 
     .project-tumb {
+        background-color: brown;
         width: auto;
         overflow-y: hidden;
 
@@ -61,7 +62,20 @@
     .project-tumb img {
         width: 100%;
     }
-
+    .description-project{
+        display: block;
+        width: 100vw;
+        text-align: center;
+       
+    }
+    .btn-repository{
+     width: 100%;
+     margin: 10px 0;
+    }
+    .btn-demo{
+     width: 100%;
+     margin: 10px 0;
+    }
 
     form {
         margin: 0 auto;
@@ -88,6 +102,12 @@
         width: 500px;
         height: 550px;
     }
+    .send-error{
+    width: 100%;
+    }
+    .send-sucess{
+    width: 100%;
+    }
 
 }
 
@@ -111,7 +131,8 @@
     }
 
     .project-tumb  {
-        height: 350px;
+        width: auto;
+        overflow-y: hidden;
         }
 
 }
