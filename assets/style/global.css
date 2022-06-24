@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
 }
 
@@ -148,17 +148,22 @@ header p {
 }
 
 .avatar-header {
-    width: 100%;
+
+    width: 40%;
 }
 
 .avatar-header img {
-    border-radius: 100%;
+    border-radius: 50%;
     width: 300px;
 
 }
 
 .text-content ul {
     margin-top: 20px;
+}
+
+.text-content{
+    width: 100%;
 }
 
 .text-content li {
