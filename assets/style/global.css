@@ -465,6 +465,14 @@ form  textarea {
     color: #49a6db;
     cursor: pointer;
 }
+.btn-send:disabled{
+    background-color: #cecece;
+    box-shadow: none;
+    border: none;
+    color:white;
+    cursor: default;
+
+}
 
 footer {
     background-color: #16425b;

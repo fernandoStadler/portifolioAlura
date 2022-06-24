@@ -1,10 +1,11 @@
-let btnSend = document.getElementById("submit")
-let subject = document.getElementById("subject");
-let inputName = document.getElementById("name");
+let btnSend = document.getElementById("submit");      
+let inputName = document.getElementById("name");    
+let subject = document.getElementById("subject");    
 let mail = document.getElementById("mail");
 let message = document.getElementById("message");
 let responseMail = document.getElementById("response-mail");
 let textMsg = document.getElementById("text-msg");
+let form = document.getElementById("form-contact");
 
 
 let templateParams = {
@@ -14,10 +15,23 @@ let templateParams = {
     message: message.value,
 };
 
+function validadeField() {
+    if (inputName.value == "" || subject.value == "" || mail.value == "" || message.value == "") {  
+        btnSend.disabled = true;  
+        } else {
+            btnSend.disabled = false;
+        }
+} validadeField();
+
+    inputName.onkeydown = validadeField;
+    subject.onkeydown = validadeField;
+    mail.onkeydown = validadeField;
+    message.onkeydown = validadeField;
+
+    
 function cleanResponse(){
     responseMail.className = "d-block"
     textMsg.innerText = "";
-
 }
 function sendResponse(CssClassName, message) {
     responseMail.className = CssClassName;
