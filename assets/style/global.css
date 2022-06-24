@@ -45,9 +45,7 @@ button, input, select, textarea {
     display: none;
 }
 .d-block{
-    width: 100%;
     display: block;
-
  }
 .title-white {
     text-align: center;
@@ -373,7 +371,7 @@ header p {
 }
 
 form  input {
-    width: 100%;
+    width: 97%;
     padding: 10px;
     margin: 5px 0;
     outline: none;
@@ -383,7 +381,7 @@ form  input {
 }
 
 form  textarea {
-    width: 100%;
+    width: 97%;
     height: 150px;
     margin: 5px 0;
     padding: 10px;
