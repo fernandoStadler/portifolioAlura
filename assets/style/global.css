@@ -4,9 +4,11 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     overflow-x: hidden;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +23,7 @@ button, input, select, textarea {
 
 ::-webkit-input-placeholder {
     font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 :-moz-placeholder {
@@ -41,12 +43,104 @@ button, input, select, textarea {
     text-decoration: underline;
     text-transform: uppercase;
 }
- .d-none{
+
+.hidden-list {
+    margin-top: -300px;
+    transition: all 5s;
+}
+
+.show-list {
+    margin-top: 0;
+    transition: all 5s;
+
+}
+
+nav{
+    position: fixed;
+    z-index: 1;
+}
+.nav-container {
+    width: 100vw;
+    font-weight: 500;
+    background-color: #16425b;
+    color: white;
+}
+
+/* MENU LG */
+.lg-nav {
+    display: flex;
+    height: 50px;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-links {
+    list-style: none;
+    display: inline;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0 2px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.menu-links a:hover {
+    color: rgb(170, 170, 170);  
+}
+/* MENU SM */
+.sm-nav {
+    display: none;
+    position: relative;
+    justify-content: space-between;
+    min-height: 50px;
+    padding: 0 20px;
+    z-index: 0;
+}
+.menu-items {
+    width: 100%;
+    min-height: 50px;
+    background-color: #16425b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0
+}
+.sm-nav-links {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    background-color: #16425b;
+    list-style: none;
+    padding: 30px 30px;
+    z-index: -1;
+
+}
+.sm-nav-links a {
+    text-decoration: none;
+    color: white;
+    line-height: 2.5em;
+    z-index: 1;
+}
+
+.btn-menu {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.d-none {
     display: none;
 }
-.d-block{
+
+.d-block {
     display: block;
- }
+}
+
 .title-white {
     text-align: center;
     color: white;
@@ -76,39 +170,8 @@ button, input, select, textarea {
     margin: 40px auto;
 }
 
-.nav-bar {
-    display: flex;
-    position: relative;
-    top: 0;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    font-weight: 500;
-}
-
 .logo {
     margin-left: 10px;
-}
-
-.nav-bar li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav {
-    background-color: #16425b;
-    color: white;
-    position: relative;
-    box-shadow: 0px 5px 15px #16425b
-}
-
-.nav-bar li a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-bar li a:hover {
-    font-weight: bold;
 }
 
 header {
@@ -118,6 +181,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
+    margin-top: 2%;
 }
 
 header h1 {
@@ -160,7 +224,7 @@ header p {
     margin-top: 20px;
 }
 
-.text-content{
+.text-content {
     width: 100%;
 }
 
@@ -243,6 +307,7 @@ header p {
 .items img {
     width: 80px;
 }
+
 .items legend {
     width: 100%;
     text-align: center;
@@ -258,17 +323,21 @@ header p {
     background-color: #16425b;
     padding: 30px 0;
 }
+
 .academy {
     padding: 30px 0;
 }
+
 .signature {
     font-family: 'Satisfy', cursive;
     font-size: 1.5em;
     text-align: right;
 }
+
 .college-degree {
     padding: 30px 0;
 }
+
 .college-items {
     display: flex;
     flex-direction: column;
@@ -294,9 +363,11 @@ header p {
 .college-content {
     padding: 30px;
 }
+
 .college-items img {
     width: 150px;
 }
+
 .college-footer {
     width: 100%;
     background-color: #ffffff;
@@ -304,26 +375,31 @@ header p {
     text-align: center;
     border: 1px solid #c2c2c2;
 }
+
 .projects {
     padding: 30px 0;
 }
-.project-tumb{
+
+.project-tumb {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    height:300px ;
+    height: 300px;
     border-radius: 10px;
 }
+
 .project-tumb img {
     width: 600px;
-    height:300px ;
+    height: 300px;
     border-radius: 10px;
 }
-.description-project{
+
+.description-project {
     width: 50%;
     text-align: left;
 }
+
 .description-project .text-description {
     color: white;
     margin-bottom: 15px;
@@ -353,9 +429,10 @@ header p {
     width: 100px;
     height: 50px;
 }
+
 .btn-demo a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .btn-demo:hover {
@@ -370,7 +447,7 @@ header p {
     padding: 30px 0;
 }
 
-form  input {
+form input {
     width: 97%;
     padding: 10px;
     margin: 5px 0;
@@ -380,7 +457,7 @@ form  input {
     border: 1px solid #c2c2c2;
 }
 
-form  textarea {
+form textarea {
     width: 97%;
     height: 150px;
     margin: 5px 0;
@@ -391,10 +468,12 @@ form  textarea {
     border-radius: 5px;
     border: 1px solid #c2c2c2;
 }
+
 #name:focus {
     box-shadow: 0px 0px 20px 2px #49a6db;
     transition: box-shadow 1s;
 }
+
 #mail:focus {
     box-shadow: 0px 0px 20px 2px #49a6db;
     transition: box-shadow 1s;
@@ -418,7 +497,8 @@ form  textarea {
 .form-header h2 {
     margin: 10px 0;
 }
-.send-sucess{
+
+.send-sucess {
     margin: 10px 0;
     padding: 10px;
     color: white;
@@ -426,7 +506,8 @@ form  textarea {
     border-radius: 10px;
     background-color: #2ea58d;
 }
-.send-error{
+
+.send-error {
     margin: 10px 0;
     padding: 10px;
     color: white;
@@ -434,6 +515,7 @@ form  textarea {
     border-radius: 10px;
     background-color: #f15e60;
 }
+
 .btn-send {
     border-radius: 5px;
     background-color: #49a6db;
@@ -458,16 +540,17 @@ form  textarea {
     color: #49a6db;
     cursor: pointer;
 }
-.btn-send:disabled{
+
+.btn-send:disabled {
     background-color: #cecece;
     box-shadow: none;
     border: none;
-    color:white;
+    color: white;
     cursor: default;
 
 }
 
-.float-btn{
+.float-btn {
     display: flex;
     width: 100%;
     justify-content: end;
@@ -476,7 +559,8 @@ form  textarea {
     bottom: 0;
     z-index: 1;
 }
-.btn-back{
+
+.btn-back {
     background-color: #16425b67;
     border-radius: 100%;
     width: 50px;
@@ -484,8 +568,9 @@ form  textarea {
     margin-right: 50px;
     border: none;
 }
-.btn-back a{
-    color:white;
+
+.btn-back a {
+    color: white;
     text-decoration: none;
 }
 

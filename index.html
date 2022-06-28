@@ -14,27 +14,41 @@
     <link rel="stylesheet" href="assets/style/global.css">
     <link rel="stylesheet" href="assets/style/mobile.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-
     <title>Fernando Stadler</title>
-
-   
-
 </head>
-
 <body>
-    <nav class="nav-bar">
-        <div class="logo">
-            <i class="fa-solid fa-code"></i>
-            <label><strong>Fernando Stadler</strong></label>
-        </div>
-        <ul>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#degree">Formação</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><strong>fernandostadler2@gmail.com</strong></li>
-        </ul>
+    <nav class="nav-container">
+        <section class="lg-nav">
+                <div class="logo">
+                    <i class="fa-solid fa-code"></i>
+                    <label><strong>Fernando Stadler</strong></label>
+                </div>
+                <div class="nav-links">
+                    <li class="menu-links"><a href="#about">Sobre mim</a></li>
+                    <li class="menu-links"><a href="#skills">Skills</a></li>
+                    <li class="menu-links"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu-links"><a href="#degree">Formação</a></li>
+                    <li class="menu-links"><a href="#projects">Projetos</a></li>
+                </div>
+        </section>
+        <section class="sm-nav">
+            <div class="menu-items">
+                <div class="logo">
+                    <i class="fa-solid fa-code"></i>
+                    <label><strong>Fernando Stadler</strong></label>
+                </div>
+                <div class="btn-menu">
+                <button class="btn-menu" id="btn-menu"><i class="fa-solid fa-bars fa-2x"></i></button>
+                </div>
+            </div>
+                <div id="sm-nav-links"class="sm-nav-links hidden-list">
+                    <li class="sm-menu-links"><a href="#about">Sobre mim</a></li>
+                    <li class="sm-menu-links"><a href="#skills">Skills</a></li>
+                    <li class="sm-menu-links"><a href="#hobbies">Hobbies</a></li>
+                    <li class="sm-menu-links"><a href="#degree">Formação</a></li>
+                    <li class="sm-menu-links"><a href="#projects">Projetos</a></li>
+                </div>
+        </section>
     </nav>
     <header>
         <div class="container">
@@ -52,7 +66,7 @@
                 </ul>
             </div>
             <div class="avatar-header" data-aos="zoom-in" data-aos-duration="2000">
-                <img src="assets/img/avatar.png" width="200px" height="300px"
+                <img src="assets/img/eu.jpg" width="200px" height="300px"
                     alt="Fernando Stadler"/>
             </div>
         </div>
@@ -245,14 +259,14 @@
     </section>
     <main>
         <footer class="footer">
-            <p>Desenvolvido por Fernando Stadler</p>
-            <p>2022</p>
+            <p>&copy; Desenvolvido por Fernando Stadler - 2022</p>
+            <p><i class="fa-solid fa-envelope-open-text"></i> fernandostadler2@gmail.com</p>
         </footer>
+        <script src="javascript/toggleMenus.js"></script>
         <script src="https://kit.fontawesome.com/67f504bb87.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="javascript/init.js"> </script>
         <script src="javascript/app.js"> </script>
 </body>
-
 </html>

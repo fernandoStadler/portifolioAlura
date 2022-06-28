@@ -4,10 +4,6 @@
         overflow-x: hidden;
     }
 
-    nav > ul> li > a {
-         display: none;
-    }
-    
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -30,15 +26,18 @@
         height: auto;
         text-align: center;
     }
+
     header p {
         width: 100%;
         height: auto;
         text-align: center;
 
     }
+
     .text-content ul {
         text-align: center;
     }
+
     .group-items {
         flex-wrap: wrap;
     }
@@ -62,19 +61,26 @@
     .project-tumb img {
         width: 100%;
     }
-    .description-project{
+
+    .description-project {
         display: block;
         width: 100vw;
         text-align: center;
-       
+
     }
-    .btn-repository{
-     width: 100%;
-     margin: 10px 0;
+
+    .btn-repository {
+        width: 100%;
+        margin: 10px 0;
     }
-    .btn-demo{
-     width: 100%;
-     margin: 10px 0;
+
+    .btn-demo {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .btn-menu {
+        visibility: visible;
     }
 
     form {
@@ -102,50 +108,64 @@
         width: 500px;
         height: 550px;
     }
-    .send-error{
-    width: 100%;
-    }
-    .send-sucess{
-    width: 100%;
+
+    .send-error {
+        width: 100%;
     }
 
-    .float-btn{
+    .send-sucess {
+        width: 100%;
+    }
+
+    .float-btn {
         display: none;
     }
 }
 
-@media (max-width: 460px) {
-    nav{
-        font-size: 12px ;
-    }
-    .container{
-        display: flex;
-    }
-    .group-items {
-        width: auto;
-    }
-    
-    .items {
-        width: 100%;
-    }
-    
-    .college-items {
-        width: 100%;
+
+@media (max-width: 768px) {
+    .lg-nav {
+        display: none;
     }
 
-    .project-tumb  {
-        width: auto;
-        overflow-y: hidden;
+    .sm-nav {
+        display: block;
+        font-size: 18px;
+
+    }
+}
+
+    @media (max-width: 460px) {
+        nav {
+            font-size: 12px;
         }
-}
 
-@media (max-width: 400px) {
-.logo{
-    width: 100vw;
-    text-align: center;
-    font-size: 2.5em;
-}
-    nav > ul> li> strong {
-        display: none;
-   }
-}
+        .container {
+            display: flex;
+        }
+
+        .group-items {
+            width: auto;
+        }
+
+        .items {
+            width: 100%;
+        }
+
+        .college-items {
+            width: 100%;
+        }
+
+        .project-tumb {
+            width: auto;
+            overflow-y: hidden;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .logo {
+            width: 100vw;
+            text-align: center;
+            font-size: 2.5em;
+        }
+    }
