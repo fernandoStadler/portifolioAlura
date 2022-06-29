@@ -214,12 +214,17 @@ header p {
     width: 40%;
 }
 
-.avatar-header img {
-    border-radius: 50%;
+.avatar-header .avatar {
+    border-radius: 70%;
     width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url(/assets/img/eu.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
-
 .text-content ul {
     margin-top: 20px;
 }
