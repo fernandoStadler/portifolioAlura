@@ -161,11 +161,3 @@
             overflow-y: hidden;
         }
     }
-
-    @media (max-width: 400px) {
-        .logo {
-            width: 100vw;
-            text-align: center;
-            font-size: 2.5em;
-        }
-    }
