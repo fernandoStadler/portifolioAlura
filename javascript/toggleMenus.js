@@ -1,5 +1,8 @@
 let btn  = document.getElementById("btn-menu");
 let menu  = document.getElementById("sm-nav-links");
+
+
+
 function toggleMenu() {
     if (menu.classList.contains("hidden-list")){
         menu.classList.remove("hidden-list");
@@ -11,3 +14,4 @@ function toggleMenu() {
 }
 
 btn.onclick = toggleMenu;
+link.onclick = toggleMenu;

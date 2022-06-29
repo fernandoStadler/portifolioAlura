@@ -7,6 +7,8 @@ let responseMail = document.getElementById("response-mail");
 let textMsg = document.getElementById("text-msg");
 let form = document.getElementById("form-contact");
 
+
+
 let templateParams = {
     subject: subject.value,
     name: inputName.value,

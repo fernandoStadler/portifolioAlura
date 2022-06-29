@@ -46,12 +46,12 @@ button, input, select, textarea {
 
 .hidden-list {
     margin-top: -300px;
-    transition: all 5s;
+    transition: all 1s;
 }
 
 .show-list {
     margin-top: 0;
-    transition: all 5s;
+    transition: all 1s;
 
 }
 
