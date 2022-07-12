@@ -10,7 +10,7 @@
 
 [Clique aqui para ver o resultado final](https://sitefernandostadler.netlify.app/)
 
-_Projeto desenvolvido para o segundo Challenge do Bootcamp Alura e Oracle._
+_Projeto desenvolvido para o terceiro Challenge do Bootcamp Alura e Oracle._
 
 Para desenvolver este projeto utilizei às tecnologias **HTML**, **CSS**, **Flex** ,**Javascript** e **AOS JS**
 
